@@ -1,0 +1,9 @@
+for (var y = 0; y < image.height; y++) {
+    for (var x = 0; x < image.width; x++) {
+        if (y & 0x01) {
+          image.addPoint(((image.width - 1) - x), y);
+        } else {
+          image.addPoint(x, y);
+        }
+    }
+}
